@@ -346,6 +346,7 @@ export function Viewer(data, parent, width, height, font) {
         });
 
         var interpolatedPoints = [];
+	var curve;
         if (entity.degreeOfSplineCurve === 2 || entity.degreeOfSplineCurve === 3) {
             for(var i = 0; i + 2 < points.length; i = i + 2) {
         if (entity.degreeOfSplineCurve === 2) {
